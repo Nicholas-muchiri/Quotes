@@ -1,16 +1,24 @@
-<div style="text-align:center">
-  <h1>
-    Quotes!
-  </h1>
+<div id="intro">
+<div class="jumbotron">
+  <div style="text-align:center">
+    <h1>
+      Quotes!
+    </h1>
+  </div>
+
+  <h2>Let's write some quotes: </h2>
 </div>
-<h2>Let's write some quotes: </h2>
-<div class="container">
-  <ul>
-    <li *ngFor='let quote of quotes'> {{quote.quote}} -{{quote.author}} -{{quote.date}}</li>
+<div class="card">
+  <div class="container">
 
-  </ul>
+    <ul>
+      <li *ngFor='let quote of quotes'> {{quote.quote}} -{{quote.author}} -{{quote.date}}</li>
 
- 
+    </ul>
+
+
+
+  </div>
 </div>
-<app-qoute-form></app-qoute-form>
-
+</div>
+<app-qoute-form (addQuote)="addNewQuote($event)"></app-qoute-form>

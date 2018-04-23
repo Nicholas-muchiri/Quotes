@@ -1,0 +1,17 @@
+#intro{
+    background-color:rgb(6, 49, 63);
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
+
+}
+.jumbotron{
+    background-color: lightblue;
+    font-family: cursive;
+    font-size: 30px
+}
+.card{
+    font-family:  BlinkMacSystemFont;
+    font-size: 20px;
+    background-color: lightblue;
+}
