@@ -1,4 +1,5 @@
 # Quotes
+<<<<<<< HEAD
 A website based on adding new quotes and getting votes on the new quote that has been added.
 #### By **Canssidle**
 ## Description
@@ -18,3 +19,5 @@ If any complications occur email me at canssidlewairimu@gmail.com
 ### License
 *MIT*
 Copyright (c) {2018} *Canssidle**
+=======
+>>>>>>> e263a6a6ee5a81b652260e2913620947b549254b
