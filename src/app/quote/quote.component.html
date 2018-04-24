@@ -9,11 +9,14 @@
   <h2>Let's write some quotes: </h2>
 </div>
 <div class="card">
-  <div class="container">
+  <div class="container"  *ngFor='let quote of quotes;let i = index'>
 
     <ul>
-      <li *ngFor='let quote of quotes'> {{quote.quote}} -{{quote.author}} -{{quote.date}}</li>
+      <li> {{quote.quote}}- {{quote.upVotes}} -{{quote.downVotes}} -{{quote.author}} -{{quote.date}}</li>
 
+    </ul>
+    <ul>
+      <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
     </ul>
 
 
@@ -22,3 +25,5 @@
 </div>
 </div>
 <app-qoute-form (addQuote)="addNewQuote($event)"></app-qoute-form>
+
+

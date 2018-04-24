@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 
 
@@ -13,7 +14,8 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
     AppComponent,
     QuoteComponent,
     QouteFormComponent,
-  
+    QuoteDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -22,4 +24,5 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { };
+export class FormModule { };

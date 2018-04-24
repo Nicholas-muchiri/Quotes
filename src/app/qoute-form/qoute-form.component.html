@@ -1,32 +1,36 @@
 <div class="jumbotron">
   <div class="container-fluid">
     <div class="row">
-      <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' class="form-inline" >
+      <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' class="form-inline">
         <!--Name Quote-->
         <div class="form-group" id="intro">
 
           <label for="quote">Quote</label>
-          <textarea type = "text" class="form-control" id="Quote" [(ngModel)]="newQuote.quote"quote="ngModel" rows="10" required></textarea>
-            <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-              <p>Quote is required</p>
-              </div>
-       
+          <input class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel"
+            required>
+          <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <p>Quote is required</p>
+          </div>
+
         </div>
-        
+
         <div class="form-group">
           <label for="author">Author</label>
-          <input type='text'class="form-control"  id="author"[(ngModel)]="newQuote.author" author="author" required>
+          <input class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+
+            <p>Author is required</p>
+          </div>
+
+
+          <button type="reset" class="btn btn-danger">Clear All</button>
+          <button type="submit" class="btn btn-success">Add Quote</button>
         </div>
-
-
-        <button type="reset" class="btn btn-danger">Clear All</button>
-        <button type="submit" class="btn btn-success">Add Quote</button>
-        
 
 
 
       </form>
+
     </div>
   </div>
-  </div>
-
+</div>
