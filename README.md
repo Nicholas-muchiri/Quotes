@@ -8,6 +8,9 @@ One can add a quote and it will appear on the browser.You can then vote for the 
 ## Setup/Installation Requirements
 *Git clone this repo.
 
+## Live Demo
+*https://canssidle.github.io/Quotes/
+
 ## Known Bugs
 *The date is adding itself automatically
 ## Technologies Used
